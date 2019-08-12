@@ -1,4 +1,4 @@
-### How I implement BWT encoding?
+### How do I implement BWT encoding?
 
 Firstly, I used struct to store suffix array and its starting position in original string. To sort the suffix array, qsort()
 is used and as for compare function, not only ascii code of the string are compared but also the position of delimiter counts.
@@ -10,7 +10,7 @@ element should be pointed to). At the same time, records delimiter postions in b
 order is ascending comparing to the bwt order we can easily know how delimiter are sorted and index order is transfered to id
 order, which is stored in auxiliary positional information file. 
   
-### How I operate BWT backward search?
+### How do I operate BWT backward search?
  
 For search, first we sort the encoded bwt string to get lexicographically  sorted first column. I used two 1d array to store
 C-table, which is crucial to backward search. Calculate first and last index by formula with select and occurence. If last
