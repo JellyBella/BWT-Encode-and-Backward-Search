@@ -1,4 +1,4 @@
-**How I implement BWT encoding?**
+#How I implement BWT encoding?
 
 Firstly, I used struct to store suffix array and its starting position in original string. To sort the suffix array, qsort()
 is used and as for compare function, not only ascii code of the string are compared but also the position of delimiter counts.
